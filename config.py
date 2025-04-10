@@ -24,7 +24,7 @@ class WebConfig:
     SECRET_KEY: str = os.getenv('SECRET_KEY')
     USERNAME: str = os.getenv('ADMIN_USERNAME')
     PASSWD: str = os.getenv('ADMIN_PASSWORD')
-
+    DOMAIN: str = os.getenv('WEBHOOK_DOMAIN')
 
 @dataclass
 class RedisConfig:
