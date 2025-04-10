@@ -7,6 +7,9 @@
 [Ss]cripts
 pyvenv.cfg
 .venv
+media
+.idea
+TODO
 pip-selfcheck.json
 .idea/**/workspace.xml
 .idea/**/tasks.xml
