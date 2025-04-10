@@ -1,0 +1,26 @@
+[project]
+name = "market-aiogram"
+version = "0.1.0"
+description = "Pdp Online Market Bot"
+requires-python = ">=3.11"
+dependencies = [
+    "aiogram>=3.19.0",
+    "alembic>=1.15.1",
+    "asyncio>=3.4.3",
+    "asyncpg>=0.30.0",
+    "babel>=2.17.0",
+    "bcrypt>=4.3.0",
+    "fasteners>=0.19",
+    "flake8>=7.1.2",
+    "greenlet>=3.1.1",
+    "i18n>=0.2",
+    "itsdangerous>=2.2.0",
+    "pillow>=11.1.0",
+    "psycopg2-binary>=2.9.10",
+    "python-dotenv>=1.1.0",
+    "sqlalchemy>=2.0.39",
+    "sqlalchemy-file>=0.6.0",
+    "starlette>=0.46.1",
+    "starlette-admin>=0.14.1",
+    "uvicorn>=0.34.0",
+]
