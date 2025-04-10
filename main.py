@@ -15,7 +15,7 @@ from bot.inlinemode import inline_router
 from config import conf
 from database.base import db
 
-WEB_SERVER_HOST = "localhost"
+WEB_SERVER_HOST = "127.0.0.1"
 WEB_SERVER_PORT = 8082
 
 WEBHOOK_PATH = "/webhook"
