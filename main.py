@@ -15,7 +15,6 @@ from bot.inlinemode import inline_router
 from config import conf
 from database.base import db
 
-
 WEB_SERVER_HOST = "localhost"
 WEB_SERVER_PORT = 8082
 
@@ -41,7 +40,7 @@ async def shutdown(dispatcher: Dispatcher, bot: Bot) -> None:
     print('database ochirildi')
 
 
-async def main() -> None:
+def main() -> None:
     bot = Bot(conf.bot.TOKEN)
     dispatcher = Dispatcher()
     dispatcher.startup.register(startup)
@@ -68,4 +67,4 @@ async def main() -> None:
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
-    asyncio.run(main())
+    main()
