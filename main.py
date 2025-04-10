@@ -30,7 +30,8 @@ async def startup(dispatcher: Dispatcher, bot: Bot) -> None:
     os.makedirs("./media/attachment", 0o777, exist_ok=True)
     container = LocalStorageDriver("./media").get_container("attachment")
     StorageManager.add_storage("default", container)
-    await bot.set_webhook(f"{BASE_WEBHOOK_URL}{WEBHOOK_PATH}", secret_token=WEBHOOK_SECRET)
+    base_url = f"https://{BASE_WEBHOOK_URL}{WEBHOOK_PATH}"
+    await bot.set_webhook(base_url, secret_token=WEBHOOK_SECRET)
 
     print('database yaratildi')
 
